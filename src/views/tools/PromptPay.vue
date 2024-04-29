@@ -21,7 +21,7 @@ const payload = reactive<{
 
 <template>
   <div class="flex justify-center">
-    <CardText class="w-[30%]">
+    <CardText class="w-full lg:w-[30%]">
       <div class="space-y-3">
         <Input
           v-model="payload.amount"

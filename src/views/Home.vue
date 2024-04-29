@@ -3,7 +3,7 @@ import Card from "../components/Card.vue";
 </script>
 
 <template>
-  <div class="grid grid-cols-4 gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
     <Card
       title="PromptPay"
       text="Generate promptpay QRCode (Powered by promptparse)"
