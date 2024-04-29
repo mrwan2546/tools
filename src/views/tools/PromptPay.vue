@@ -23,18 +23,6 @@ const payload = reactive<{
   <div class="flex justify-center">
     <CardText class="w-full lg:w-[30%]">
       <div class="space-y-3">
-        <Input
-          v-model="payload.amount"
-          type="number"
-          placeholder="1000.00"
-          label="Amount"
-        />
-        <Input
-          v-model="payload.value"
-          type="text"
-          placeholder="08xxxxxxxxx"
-          label="Mobile, Citizen ID or E-Wallet"
-        />
         <Select
           label="Method"
           v-model="payload.method"
@@ -52,6 +40,18 @@ const payload = reactive<{
               value: 'EWALLETID',
             },
           ]"
+        />
+        <Input
+          v-model="payload.value"
+          type="text"
+          placeholder="08xxxxxxxxx"
+          label="Mobile, Citizen ID or E-Wallet"
+        />
+        <Input
+          v-model="payload.amount"
+          type="number"
+          placeholder="1000.00"
+          label="Amount"
         />
       </div>
       <div
