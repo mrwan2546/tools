@@ -8,6 +8,13 @@ import { anyId } from "promptparse/generate";
 
 type Method = "MSISDN" | "NATID" | "EWALLETID" | "BANKACC";
 
+const inputMethod: Record<Method, [string, string]> = {
+  MSISDN: ["Mobile", "088xxxxxxxx"],
+  NATID: ["Citizen ID", "15000xxxxxxx"],
+  EWALLETID: ["E-Wallet ID", "14000xxxxxxxx"],
+  BANKACC: ["Bank account", "048xxxxxxxx"],
+};
+
 const payload = reactive<{
   amount: number;
   value: string;
@@ -44,8 +51,8 @@ const payload = reactive<{
         <Input
           v-model="payload.value"
           type="text"
-          placeholder="08xxxxxxxxx"
-          label="Mobile, Citizen ID or E-Wallet"
+          :placeholder="inputMethod[payload.method][1]"
+          :label="inputMethod[payload.method][0]"
         />
         <Input
           v-model="payload.amount"

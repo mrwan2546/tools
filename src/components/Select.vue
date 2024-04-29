@@ -13,10 +13,14 @@ const emit = defineEmits(["update:modelValue"]);
 <template>
   <div>
     <label>{{ props.label }}</label>
-    <select class="mt-0 py-3 px-4 w-full rounded-lg text-sm bg-[#333333]">
+    <select
+      class="mt-0 py-3 px-4 w-full rounded-lg text-sm bg-[#333333]"
+      @change="(e: any) => emit('update:modelValue', e.target.value)"
+    >
       <option
         v-for="(data, idx) in props.items"
         :key="idx"
+        :value="data.value"
         :selected="data.value === props.modelValue"
       >
         {{ data.text }}
