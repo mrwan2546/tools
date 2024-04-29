@@ -58,6 +58,8 @@ const payload = reactive<{
           v-model="payload.amount"
           type="number"
           placeholder="1000.00"
+          :min="0"
+          :max="50000"
           label="Amount"
         />
       </div>
