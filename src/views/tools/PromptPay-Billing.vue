@@ -21,7 +21,7 @@ const payload = reactive({
         <Input v-model="payload.billId" type="text" label="Billing ID" />
         <Input v-model="payload.ref1" type="text" label="Ref #1" />
         <Input v-model="payload.ref2" type="text" label="Ref #2 (Optional)" />
-        <Input v-model="payload.ref3" type="text" label="Ref #2 (Optional)" />
+        <Input v-model="payload.ref3" type="text" label="Ref #3 (Optional)" />
         <Input
           v-model="payload.amount"
           type="number"
