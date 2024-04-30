@@ -4,6 +4,7 @@ import type { RouteRecordRaw } from "vue-router";
 import Home from "./views/Home.vue";
 // Tool
 import PromptPay from "./views/tools/PromptPay.vue";
+import PromptPayBilling from "./views/tools/PromptPay-Billing.vue";
 
 const routes: RouteRecordRaw[] = [
   {
@@ -13,6 +14,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: "/prompt-pay",
     component: PromptPay,
+  },
+  {
+    path: "/prompt-pay-billing",
+    component: PromptPayBilling,
   },
 ];
 
