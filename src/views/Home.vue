@@ -16,6 +16,12 @@ import Card from "../components/Card.vue";
       url="/prompt-pay-billing"
       icon="/pp.svg"
     />
+    <Card
+      title="PromptPay (Barcode)"
+      text="Generate PromptPay Barcode (Powered by promptparse)"
+      url="/prompt-pay-barcode"
+      icon="/pp-barcode.svg"
+    />
   </div>
 
   <footer class="text-white mt-12">
