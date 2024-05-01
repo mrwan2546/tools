@@ -6,13 +6,13 @@ import Card from "../components/Card.vue";
   <div class="grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 gap-4">
     <Card
       title="PromptPay"
-      text="Generate promptpay QRCode (QR29) (Powered by promptparse)"
+      text="Generate PromptPay QRCode (QR29) (Powered by promptparse)"
       url="/prompt-pay"
       icon="/pp.svg"
     />
     <Card
       title="PromptPay (Billing)"
-      text="Generate promptpay QRCode (QR30) (Powered by promptparse)"
+      text="Generate PromptPay QRCode (QR30) (Powered by promptparse)"
       url="/prompt-pay-billing"
       icon="/pp.svg"
     />
