@@ -22,6 +22,12 @@ import Card from "../components/Card.vue";
       url="/prompt-pay-barcode"
       icon="/pp-barcode.svg"
     />
+    <Card
+      title="Truemoney (QRCode)"
+      text="Generate Truemoney QRCode (Powered by promptparse)"
+      url="/prompt-pay-tmn"
+      icon="/tmn.svg"
+    />
   </div>
 
   <footer class="text-white mt-12">

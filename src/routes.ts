@@ -6,6 +6,7 @@ import Home from "./views/Home.vue";
 import PromptPay from "./views/tools/PromptPay.vue";
 import PromptPayBilling from "./views/tools/PromptPay-Billing.vue";
 import PromptPayBarcode from "./views/tools/PromptPay-Barcode.vue";
+import PromptPayTmn from "./views/tools/PromptPay-Tmn.vue";
 
 const routes: RouteRecordRaw[] = [
   {
@@ -23,6 +24,10 @@ const routes: RouteRecordRaw[] = [
   {
     path: "/prompt-pay-barcode",
     component: PromptPayBarcode,
+  },
+  {
+    path: "/prompt-pay-tmn",
+    component: PromptPayTmn,
   },
 ];
 
