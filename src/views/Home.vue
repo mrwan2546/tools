@@ -32,8 +32,8 @@ import Card from "../components/Card.vue";
 
   <footer class="text-white mt-12">
     <p class="text-center">
-      Made with 💖 by
-      <a href="https://m307.dev" class="underline text-purple-500">M-307</a>
+      Made with ❤️‍🔥 by
+      <a href="https://github.com/mrwan2546" class="underline text-purple-500">Mr. Wan</a>
     </p>
   </footer>
 </template>
