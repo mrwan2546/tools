@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import { reactive } from "vue";
-import CardText from "../../components/CardText.vue";
-import Input from "../../components/Input.vue";
+import CardText from "@/components/CardText.vue";
+import Input from "@/components/Input.vue";
 
-import { botBarcode } from "promptparse/generate";
+import { billPayment } from "promptparse/generate";
 
 const payload = reactive({
   amount: 10,
   ref1: "",
   ref2: "",
+  ref3: "",
   billId: "",
 });
 </script>
@@ -20,6 +21,7 @@ const payload = reactive({
         <Input v-model="payload.billId" type="text" label="Billing ID" />
         <Input v-model="payload.ref1" type="text" label="Ref #1" />
         <Input v-model="payload.ref2" type="text" label="Ref #2 (Optional)" />
+        <Input v-model="payload.ref3" type="text" label="Ref #3 (Optional)" />
         <Input
           v-model="payload.amount"
           type="number"
@@ -34,15 +36,16 @@ const payload = reactive({
         class="mt-6"
       >
         <img
-          class="mx-auto rounded-xl p- bg-white"
-          :src="`https://barcode.tec-it.com/barcode.ashx?data=${encodeURIComponent(
-            botBarcode({
+          class="mx-auto rounded-xl"
+          :src="`https://zxing.org/w/chart?chs=256x256&cht=qr&chl=${encodeURIComponent(
+            billPayment({
               billerId: payload.billId,
               amount: payload.amount,
               ref1: payload.ref1,
               ref2: payload.ref2,
+              ref3: payload.ref3,
             })
-          )}`"
+          )}&choe=UTF-8`"
         />
       </div>
     </CardText>

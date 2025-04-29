@@ -9,12 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lucide-vue-next": "^0.503.0",
     "preline": "^2.1.0",
-    "promptparse": "^1.2.1",
+    "promptparse": "^1.4.0",
+    "unplugin-vue-router": "^0.12.0",
     "vue": "^3.4.21",
+    "vue-qrcode-reader": "^5.7.2",
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
+    "@types/node": "^22.15.3",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",

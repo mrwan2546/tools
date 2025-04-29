@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { reactive } from "vue";
-import CardText from "../../components/CardText.vue";
-import Input from "../../components/Input.vue";
+import CardText from "@/components/CardText.vue";
+import Input from "@/components/Input.vue";
 
-import { truemoney } from "promptparse/generate";
+import { trueMoney } from "promptparse/generate";
 
 const payload = reactive<{
   amount: number;
@@ -45,7 +45,7 @@ const payload = reactive<{
         <img
           class="mx-auto rounded-xl"
           :src="`https://zxing.org/w/chart?chs=256x256&cht=qr&chl=${encodeURIComponent(
-            truemoney({
+            trueMoney({
               mobileNo: payload.mobile,
               amount: payload.amount,
               message: payload.message,

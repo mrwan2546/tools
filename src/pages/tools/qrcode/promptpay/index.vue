@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { reactive } from "vue";
-import CardText from "../../components/CardText.vue";
-import Input from "../../components/Input.vue";
-import Select from "../../components/Select.vue";
+import CardText from "@/components/CardText.vue";
+import Input from "@/components/Input.vue";
+import Select from "@/components/Select.vue";
 
 import { anyId } from "promptparse/generate";
 
