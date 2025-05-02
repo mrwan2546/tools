@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dayjs": "^1.11.13",
     "lucide-vue-next": "^0.503.0",
     "preline": "^2.1.0",
     "promptparse": "^1.4.0",
