@@ -125,7 +125,7 @@ const payload = reactive({
         <div class="space-y-3">
           <label>Upload file:</label>
           <div class="mt-0 py-3 px-4 w-full rounded-lg text-sm bg-[#333333]">
-            <QrcodeCapture @detect="onDetect" />
+            <QrcodeCapture @detect="onDetect" :capture="undefined" :multiple="undefined" on />
           </div>
         </div>
       </CardText>
